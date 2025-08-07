@@ -69,9 +69,10 @@ Loan_approval_predictor/
 
 # How to Run Locally
 ### 1.Clone the repo
-``git clone https://github.com/kanish-20/Loan_approval_predictor.git
+```
+git clone https://github.com/kanish-20/Loan_approval_predictor.git
 cd Loan_approval_predictor
-``
+```
 
 ### 2.Install dependencies
 ```
