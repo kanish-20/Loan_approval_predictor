@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Approval Prediction</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+            padding: 50px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 320px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        small {
+            color: gray;
+        }
+        h2, h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Loan Approval Prediction</h2>
+        <form method="post">
+            <select name="Gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+
+            <select name="Married" required>
+                <option value="" disabled selected>Select Marital Status</option>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+
+            <input  name="ApplicantIncome" placeholder="Applicant Income" required>
+
+            <input  name="LoanAmount" placeholder="Loan Amount" required>
+
+            <select name="Credit_History" required>
+                <option value="" disabled selected>Select Credit History</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            <small>* Select 'Yes' only if you have taken and repaid loans earlier.</small><br>
+
+            <input type="checkbox" name="confirm" required>
+            <small>I confirm that the above information is accurate.</small><br><br>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if result %}
+            <h3>{{ result }}</h3>
+        {% endif %}
+    </div>
+</body>
+</html>

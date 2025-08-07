@@ -1,0 +1,9 @@
+Loan_ID,Gender,Married,ApplicantIncome,LoanAmount,Credit_History,Loan_Status
+LP001002,Male,Yes,5849,128,1,Y
+LP001003,Male,No,4583,128,1,Y
+LP001005,Male,Yes,3000,66,1,Y
+LP001006,Male,Yes,2583,120,1,Y
+LP001008,Male,No,6000,141,1,Y
+LP001011,Female,Yes,5417,267,1,Y
+LP001013,Male,Yes,2333,95,1,N
+LP001014,Male,No,3036,158,0,N
